@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Засоби побудови меш-мережі на базі старих роутерів | Бакалаврська робота</title>
+
+    <!-- Основне SEO -->
+    <title>Засоби побудови меш-мережі на базі старих роутерів | Бакалаврська робота Стеблини Юрія</title>
+    <meta name="description" content="Бакалаврська робота: розробка засобів побудови децентралізованої mesh-мережі на базі застарілих Wi-Fi роутерів з використанням OpenWrt та протоколу batman-adv.">
+    <meta name="keywords" content="mesh network, mesh-мережа, batman-adv, OpenWrt, WiFi mesh, старі роутери, бездротова мережа, децентралізована мережа">
+    <meta name="author" content="Стеблина Юрій">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://andreyberdov72.github.io/mesh-project-landing/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Засоби побудови меш-мережі на базі старих роутерів | Бакалаврська робота">
+    <meta property="og:description" content="Розробка практичних засобів для створення mesh-мережі з використанням OpenWrt та batman-adv на застарілому обладнанні.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andreyberdov72.github.io/mesh-project-landing/">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:image" content="https://andreyberdov72.github.io/mesh-project-landing/assets/images/mesh-network-preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Засоби побудови меш-мережі на базі старих роутерів">
+    <meta name="twitter:description" content="Бакалаврська робота Стеблини Юрія">
+
+    <!-- Schema.org Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Засоби побудови меш-мережі на базі старих роутерів",
+      "author": {
+        "@type": "Person",
+        "name": "Стеблина Юрій"
+      },
+      "datePublished": "2026",
+      "description": "Бакалаврська робота, присвячена розробці засобів побудови децентралізованої mesh-мережі з використанням OpenWrt та batman-adv.",
+      "keywords": "mesh network, batman-adv, OpenWrt, WiFi mesh",
+      "about": {
+        "@type": "Thing",
+        "name": "Mesh-мережа"
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="assets/images/university-logo.png" alt="Логотип університету" class="university-logo">
+            <img src="assets/images/university-logo.png"
+                 alt="Логотип Сумського державного університету"
+                 class="university-logo"
+                 width="180" height="80">
+
             <h1>Засоби побудови меш-мережі на базі старих роутерів</h1>
             <p class="subtitle">Бакалаврська робота</p>
         </div>
@@ -18,18 +62,19 @@
 
     <main class="container">
 
-        <section id="about">
-            <h2>Короткий опис роботи</h2>
-            <p>Робота присвячена розробці практичних засобів для створення децентралізованої бездротової mesh-мережі з використанням застарілих Wi-Fi роутерів. Дослідження включає встановлення OpenWrt, налаштування протоколу маршрутизації batman-adv та оцінку продуктивності мережі в умовах симуляції. Також робота включає розроблення допоміжних програмних засобів розгортання, оновлення, тощо.</p>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Короткий опис роботи</h2>
+            <p>Робота присвячена розробці практичних засобів для створення децентралізованої бездротової mesh-мережі з використанням застарілих Wi-Fi роутерів. Дослідження включає встановлення OpenWrt, налаштування протоколу маршрутизації batman-adv та оцінку продуктивності мережі в умовах симуляції. Також робота включає розроблення допоміжних програмних засобів розгортання, оновлення тощо.</p>
         </section>
 
-        <section id="relevance">
-            <h2>Актуальність теми</h2>
-            <p>У сучасних умовах обмеженого доступу до нового обладнання та необхідності розгортання мереж у віддалених або складних локаціях, використання старих роутерів для побудови mesh-мереж є економічно вигідним і екологічним рішенням. Робота спрямована на теоретичну реалізацію такої системи.</p>
+        <section id="relevance" aria-labelledby="relevance-heading">
+            <h2 id="relevance-heading">Актуальність теми</h2>
+            <p>У сучасних умовах обмеженого доступу до нового обладнання та необхідності розгортання мереж у віддалених або складних локаціях, використання старих роутерів для побудови mesh-мереж є економічно вигідним і екологічним рішенням. Робота спрямована на теоретичну та практичну реалізацію такої системи.</p>
         </section>
 
-        <section id="goal-tasks">
-            <h2>Мета та завдання дослідження</h2>
+        <section id="goal-tasks" aria-labelledby="goal-tasks-heading">
+            <h2 id="goal-tasks-heading">Мета та завдання дослідження</h2>
+
             <h3>Мета:</h3>
             <p>Розробити та дослідити засоби побудови стабільної mesh-мережі на базі застарілого обладнання з використанням відкритих рішень.</p>
 
@@ -39,24 +84,26 @@
                 <li>Налаштувати OpenWrt на тестових роутерах.</li>
                 <li>Розгорнути та протестувати mesh-мережу з протоколом batman-adv у симуляції.</li>
                 <li>Провести вимірювання продуктивності, затримки та покриття мережі у симуляції.</li>
-                <li>Розробити рекомендації програмне забезпечення для розгортання та супровіду такої системи.</li>
+                <li>Розробити рекомендації та програмне забезпечення для розгортання та супровіду такої системи.</li>
             </ul>
         </section>
 
-        <section id="methodology">
-            <h2>Методологія дослідження</h2>
+        <section id="methodology" aria-labelledby="methodology-heading">
+            <h2 id="methodology-heading">Методологія дослідження</h2>
             <p>У роботі застосовується експериментальний метод. Було використано фізичні тести на реальному обладнанні, програмне забезпечення OpenWrt та інструменти моніторингу мережі.</p>
         </section>
 
-        <section id="results">
-            <h2>Очікувані результати</h2>
+        <section id="results" aria-labelledby="results-heading">
+            <h2 id="results-heading">Очікувані результати</h2>
             <p>Працююче ПО для розгортання та супровіду такої системи та рекомендацій для подальшого використання.</p>
         </section>
 
-        <section id="contacts">
-            <h2>Контактна інформація</h2>
+        <section id="contacts" aria-labelledby="contacts-heading">
+            <h2 id="contacts-heading">Контактна інформація</h2>
             <p><strong>Автор:</strong> Стеблина Юрій</p>
-            <p><strong>Повний текст роботи:</strong> <a href="https://github.com/andreyberdov72/mesh-project" target="_blank">GitHub — mesh-project</a></p>
+            <p><strong>Повний текст роботи:</strong>
+                <a href="https://github.com/andreyberdov72/mesh-project" target="_blank" rel="noopener">GitHub — mesh-project</a>
+            </p>
         </section>
 
     </main>
@@ -64,7 +111,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Стеблина Юрій. Ліцензія AGPLv3</p>
-            <p>Лендінг створено в рамках лабораторної роботи з дотриманням Trunk-Based Development</p>
+            <p>Лендінг створено в рамках лабораторної роботи з дотриманням стратегії Trunk-Based Development</p>
         </div>
     </footer>
 </body>
