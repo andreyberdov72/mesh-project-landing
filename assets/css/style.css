@@ -1,9 +1,8 @@
-
 @font-face {
     font-family: 'Ubuntu';
-    src: url('assets/fonts/ubuntu/ubuntu-regular.woff2') format('woff2'),
-    url('assets/fonts/ubuntu/ubuntu-regular.woff') format('woff'),
-    url('assets/fonts/ubuntu/ubuntu-regular.ttf') format('truetype');
+    src: url('../fonts/ubuntu/ubuntu-regular.woff2') format('woff2'),
+    url('../fonts/ubuntu/ubuntu-regular.woff') format('woff'),
+    url('../fonts/ubuntu/ubuntu-regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -11,9 +10,9 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('assets/fonts/ubuntu/ubuntu-medium.woff2') format('woff2'),
-    url('assets/fonts/ubuntu/ubuntu-medium.woff') format('woff'),
-    url('assets/fonts/ubuntu/ubuntu-medium.ttf') format('truetype');
+    src: url('../fonts/ubuntu/ubuntu-medium.woff2') format('woff2'),
+    url('../fonts/ubuntu/ubuntu-medium.woff') format('woff'),
+    url('../fonts/ubuntu/ubuntu-medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -21,21 +20,11 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('assets/fonts/ubuntu/ubuntu-bold.woff2') format('woff2'),
-    url('assets/fonts/ubuntu/ubuntu-bold.woff') format('woff'),
-    url('assets/fonts/ubuntu/ubuntu-bold.ttf') format('truetype');
+    src: url('../fonts/ubuntu/ubuntu-bold.woff2') format('woff2'),
+    url('../fonts/ubuntu/ubuntu-bold.woff') format('woff'),
+    url('../fonts/ubuntu/ubuntu-bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('assets/fonts/ubuntu/ubuntu-italic.woff2') format('woff2'),
-    url('assets/fonts/ubuntu/ubuntu-italic.woff') format('woff'),
-    url('assets/fonts/ubuntu/ubuntu-italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
     font-display: swap;
 }
 
@@ -54,7 +43,7 @@ html {
 
 body {
     font-family: 'Ubuntu', system-ui, -apple-system, sans-serif;
-    line-height: 1.7;
+    line-height: 1.75;
     color: #1f2937;
     background-color: #f8f9fa;
     font-weight: 400;
@@ -68,19 +57,20 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 h2 {
     font-size: 1.75rem;
-    margin: 2.5rem 0 1.25rem;
+    margin: 3rem 0 1.25rem;
     border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 h3 {
     font-size: 1.35rem;
     margin: 2rem 0 1rem;
+    color: #1f2937;
 }
 
 p {
@@ -88,125 +78,13 @@ p {
     max-width: 75ch;
 }
 
-ul, ol {
+ul {
     padding-left: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.university-logo {
-    height: 80px;
-    margin-bottom: 1rem;
-}
-
-main {
-    padding: 3rem 0 4rem;
-    background-color: #ffffff;
-}
-
-
-section {
-    margin-bottom: 4rem;
-}
-
-.section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-    color: #1f2937;
-}
-
-
-footer {
-    background-color: #1f2937;
-    color: #d1d5db;
-    text-align: center;
-    padding: 2.5rem 0;
-    font-size: 0.95rem;
-}
-
-
-@media (max-width: 768px) {
-    html {
-        font-size: 15px;
-    }
-
-    h1 {
-        font-size: 1.9rem;
-    }
-
-    .container {
-        padding: 0 1.25rem;
-    }
-}
-
-
-figure {
-    margin: 2rem 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #e5e7eb;
-    border-radius: 4px;
-}
-
-
-.card {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
-    padding: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.subtitle {
-    font-size: 1.25rem;
-    color: #4b5563;
-    font-weight: 400;
-    margin-top: 0.25rem;
-}
-
-section h2 {
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 0.75rem;
-}
-
-section h3 {
-    margin-top: 1.75rem;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    color: #1f2937;
-}
-
-ul {
-    list-style-type: disc;
-}
-
-li {
+    margin-bottom: 0.6rem;
     line-height: 1.65;
 }
 
@@ -219,16 +97,86 @@ a:hover {
     text-decoration: underline;
 }
 
-footer .container {
+.container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.card {
-    background: #fff;
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 3rem 0 2.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    font-weight: 400;
+}
+
+main {
+    padding: 3.5rem 0 5rem;
+    background-color: #ffffff;
+}
+
+section {
+    margin-bottom: 4.5rem;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #d1d5db;
+    text-align: center;
+    padding: 3rem 0 2rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #9ca3af;
+}
+
+footer a:hover {
+    color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    header {
+        padding: 2.5rem 0 2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
     border: 1px solid #e5e7eb;
-    border-radius: 6px;
-    padding: 1.75rem;
-    margin-bottom: 2.5rem;
+    border-radius: 4px;
+}
+
+.university-logo {
+    height: 85px;
+    margin-bottom: 1.25rem;
+    object-fit: contain;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
 }
