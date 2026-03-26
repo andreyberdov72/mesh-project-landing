@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andreyberdov72.github.io/mesh-thesis-landing/sitemap.xml
